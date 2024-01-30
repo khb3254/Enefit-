@@ -51,7 +51,8 @@ data_block_id
 - euros_per_mwh - 다음 날의 전력 가격은 메가와트시당 유로로 표시됩니다.
 - data_block_id
 
-### forecast_weather.csv W예측 시점에 사용할 수 있었던 일기 예보입니다. 다음으로 부터 가져온 자료입니다. 유럽 중기 예보 센터.
+### forecast_weather.csv 
+- W예측 시점에 사용할 수 있었던 일기 예보입니다. 다음으로 부터 가져온 자료입니다. 유럽 중기 예보 센터.
 
 - [latitude/longitude] - 일기 예보의 좌표입니다
 - origin_datetime - 예측이 생성된 시점의 타임스탬프입니다.
@@ -67,7 +68,8 @@ data_block_id
 - snowfall - 지난 한 시간 동안의 적설량(미터 환산) 단위입니다.
 - total_precipitation - 이전 한 시간 동안 지구 표면에 내린 비와 눈으로 구성된 축적된 액체를 미터 단위로 표시합니다.
 
-### historical_weather.csv 과거 날씨 데이터.
+### historical_weather.csv 
+- 과거 날씨 데이터.
 - datetime
 - temperature
 - dewpoint
@@ -83,12 +85,17 @@ data_block_id
 - [latitude/longitude] - 기상 관측소의 좌표입니다.
 - data_block_id
 
-### public_timeseries_testing_util.py 사용자 지정 오프라인 API 테스트를 더 쉽게 실행하기 위한 선택적 파일입니다. 자세한 내용은 스크립트의 문서 문자열을 참조하세요. 사용하기 전에 이 파일을 편집해야 합니다.
+### public_timeseries_testing_util.py 
+- 사용자 지정 오프라인 API 테스트를 더 쉽게 실행하기 위한 선택적 파일입니다. 자세한 내용은 스크립트의 문서 문자열을 참조하세요. 사용하기 전에 이 파일을 편집해야 합니다.
 
-### example_test_files/ API의 작동 방식을 설명하기 위한 데이터입니다. API가 제공하는 것과 동일한 파일과 열을 포함합니다. 처음 세 개의 data_block_ids는 훈련 집합의 마지막 세 개의 data_block_ids의 반복입니다.
+### example_test_files/ 
+- API의 작동 방식을 설명하기 위한 데이터입니다. API가 제공하는 것과 동일한 파일과 열을 포함합니다. 처음 세 개의 data_block_ids는 훈련 집합의 마지막 세 개의 data_block_ids의 반복입니다.
 
-### example_test_files/sample_submission.csv API를 통해 전달된 유효한 샘플 제출물. 이 노트북을 참조하여 샘플 제출을 사용하는 아주 간단한 예시를 확인하세요.
+### example_test_files/sample_submission.csv 
+- API를 통해 전달된 유효한 샘플 제출물. 이 노트북을 참조하여 샘플 제출을 사용하는 아주 간단한 예시를 확인하세요.
 
-### example_test_files/revealed_targets.csv 실제 목표 값으로, 하루의 지연을 두고 제공됩니다.
+### example_test_files/revealed_targets.csv 
+- 실제 목표 값으로, 하루의 지연을 두고 제공됩니다.
 
-### enefit/ API를 활성화하는 파일. API는 15분 이내에 모든 행을 제공하고 0.5GB 미만의 메모리를 예약할 것으로 예상합니다. 다운로드할 수 있는 API 사본은 example_test_files/의 데이터를 제공합니다. API를 발전시키기 위해서는 해당 날짜에 대한 예측을 해야 하지만, 이러한 예측은 점수가 매겨지지 않습니다. 처음에는 약 3개월의 데이터가 제공되며, 예측 기간이 끝날 때까지 최대 10개월의 데이터가 제공될 것으로 예상됩니다.
+### enefit/ 
+- API를 활성화하는 파일. API는 15분 이내에 모든 행을 제공하고 0.5GB 미만의 메모리를 예약할 것으로 예상합니다. 다운로드할 수 있는 API 사본은 example_test_files/의 데이터를 제공합니다. API를 발전시키기 위해서는 해당 날짜에 대한 예측을 해야 하지만, 이러한 예측은 점수가 매겨지지 않습니다. 처음에는 약 3개월의 데이터가 제공되며, 예측 기간이 끝날 때까지 최대 10개월의 데이터가 제공될 것으로 예상됩니다.
